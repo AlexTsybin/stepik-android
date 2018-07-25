@@ -1,14 +1,14 @@
 ext.versions = [
-        code                 : 1993,
-        name                 : '1.62',
+        code                 : 1994,
+        name                 : '1.63',
 
         minSdk               : 15,
-        targetSdk            : 25,
+        targetSdk            : 26,
         compileSdk           : 26,
         buildTools           : '26.0.2',
 
         androidGradlePlugin  : '3.0.0',
-        kotlin               : '1.2.41',
+        kotlin               : '1.2.51',
         googleServicesVersion: '3.0.0',
         fabric               : '1.25.1',
         dexcount             : '0.8.2',
@@ -32,6 +32,8 @@ ext.versions = [
 
         amplitude            : '2.14.1',
         appMetrica           : '2.78',
+        appsflyer            : '4.8.13@aar',
+        installreferrer      : '1.0',
 
         calligraphy          : '2.1.0',
         lottie               : '2.3.1',
@@ -110,6 +112,8 @@ ext.libraries = [
 
         amplitude            : "com.amplitude:android-sdk:$versions.amplitude",
         appMetrica           : "com.yandex.android:mobmetricalib:$versions.appMetrica",
+        appsflyer            : "com.appsflyer:af-android-sdk:$versions.appsflyer",
+        installreferrer      : "com.android.installreferrer:installreferrer:$versions.installreferrer",
 
         calligraphy          : "uk.co.chrisjenx:calligraphy:$versions.calligraphy",
         lottie               : "com.airbnb.android:lottie:$versions.lottie",

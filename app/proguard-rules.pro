@@ -74,6 +74,12 @@
 -keep class com.yandex.metrica.* { *; }
 -dontwarn com.yandex.metrica.*
 
+#Install Referrer
+-dontwarn com.android.installreferrer
+-keep class com.appsflyer.** { *; }
+-keep public class com.google.android.gms.* { public *; }
+-dontwarn com.google.android.gms.**
+
 #Keep POJO
 -keep class org.stepic.droid.model.** { *; }
 -keep interface org.stepic.droid.model.** { *; }
@@ -81,10 +87,17 @@
 -keep class org.stepic.droid.adaptive.model.** { *; }
 -keep interface org.stepic.droid.adaptive.model.** { *; }
 
+-keep class org.stepic.droid.features.deadlines.model.** { *; }
+-keep interface org.stepic.droid.features.deadlines.model.** { *; }
+
 -keep class org.stepic.droid.web.** { *; }
 -keep interface org.stepic.droid.web.** { *; }
 -dontwarn org.stepic.droid.web.**
 -dontwarn org.stepic.droid.model.**
+
+-keep class org.stepik.android.model.** { *; }
+-keep interface org.stepik.android.model.** { *; }
+-keep public enum org.stepik.android.**{ *;}
 
 #Keep all enums
 -keep public enum org.stepic.droid.**{
